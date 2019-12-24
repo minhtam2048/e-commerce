@@ -75,7 +75,7 @@ export const getCurrentUser = () => {
             unsubscribe();
             resolve(userAuth);
         }, reject);
-    })
+    });
 }
 
 
