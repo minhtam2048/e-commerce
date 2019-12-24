@@ -3,8 +3,10 @@ import {connect} from 'react-redux';
 import {selectCollection} from '../../redux/shop/shop.selector';
 import CollectionItem from '../../components/collection-item/collection-item.component';
 import './collection.styles.scss';
+import { firestore } from '../../firebase/firebase.utils';
 
 const CollectionPage = ({collection }) => {
+   
     const {title, items} = collection;
     return(
     <div className='collection-page'>
