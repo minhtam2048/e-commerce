@@ -11,7 +11,7 @@ const CollectionOverview = ({collections}) => (
             collections.map(({id, ...otherCollectionProps}) => (
                 <CollectionPreview key ={id} {...otherCollectionProps} />
             ))
-        }
+        } 
     </div>
 );
 
